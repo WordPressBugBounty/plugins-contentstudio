@@ -4,7 +4,7 @@ Donate link: http://contentstudio.io
 Tags: ContentStudio provides you with powerful blogging & social media tools to keep your audience hooked by streamlining the process for you to discover and share engaging content on multiple blogging & social media networks.
 Requires at least: 4.8
 Tested up to: 6.7.1
-Stable tag: 1.3.3
+Stable tag: 1.3.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
