@@ -4,7 +4,7 @@ Donate link: http://contentstudio.io
 Tags: ContentStudio provides you with powerful blogging & social media tools to keep your audience hooked by streamlining the process for you to discover and share engaging content on multiple blogging & social media networks.
 Requires at least: 4.8
 Tested up to: 6.7.1
-Stable tag: 1.3.5
+Stable tag: 1.3.7
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -69,7 +69,6 @@ After you [sign up for an account at ContentStudio](https://app.contentstudio.io
 
 ContentStudio has several subscription plans to choose from, starting at $49/month. [Choose the right plan for you + your team](https://contentstudio.io/pricing).
 
+= Where do I report security bugs found in this plugin? =
 
-= How can I report security bugs? =
-
-You can report security bugs through the Patchstack Vulnerability Disclosure Program. The Patchstack team helps validate, triage and handle any security vulnerabilities. [Report a security vulnerability.]( https://patchstack.com/database/vdp/fa2a104d-87fa-4d39-832d-b1e26de0af63 )
+Please report security bugs found in the source code of the Contentstudio plugin through the [Patchstack Vulnerability Disclosure  Program](https://patchstack.com/database/vdp/undefined). The Patchstack team will assist you with verification, CVE assignment, and notify the developers of this plugin.

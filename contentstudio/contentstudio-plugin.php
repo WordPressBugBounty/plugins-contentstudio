@@ -2,7 +2,7 @@
 /*
 Plugin Name: ContentStudio
 Description: ContentStudio provides you with powerful blogging & social media tools to keep your audience hooked by streamlining the process for you to discover and share engaging content on multiple blogging & social media networks
-Version: 1.3.5
+Version: 1.3.7
 Author: ContentStudio
 Author URI: http://contentstudio.io/
 Plugin URI: http://contentstudio.io/
@@ -39,7 +39,7 @@ if (! class_exists('contentstudio')) {
 
         protected $assets = 'https://contentstudio.io/img';
 
-        private $version = "1.3.5";
+        private $version = "1.3.7";
 
         protected $contentstudio_id = '';
 
@@ -330,14 +330,12 @@ if (! class_exists('contentstudio')) {
 
         public function add_cstu_api_key()
         {
-            if (isset($_POST['data'])) {
+            if (isset($_POST['data']) && $_POST['data']['nonce_ajax']) {
 
-                if ($_POST['data']['security']) {
-                    $nonce = sanitize_text_field($_POST['data']['security']);
-                    if (! wp_verify_nonce($nonce, 'ajax-nonce')) {
-                        echo json_encode(['status' => false, 'message' => 'Invalid security token provided.']);
-                        die();
-                    }
+                $nonce = sanitize_text_field($_POST['data']['nonce_ajax']);
+                if (!wp_verify_nonce($nonce, 'add_cstu_api_key')) {
+                    echo json_encode(['status' => false, 'message' => 'Invalid security token provided.']);
+                    die();
                 }
 
                 if (isset($_POST['data']['key'])) {
